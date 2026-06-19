@@ -1,3 +1,18 @@
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
 /* CSS cv.hmtl */
 .list-index-container {
   max-width: 500px;
@@ -21,18 +36,6 @@
 
 /* CSS cv.html */
 .cv-container {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
   background-color: #c6dbef;
   line-height: 1.4;
   padding: 50px 0;
@@ -87,4 +90,88 @@ h1 {
 
 .education-title strong {
   font-weight: 700;
+}
+
+/* CSS menu.html */
+.menu-header {
+  height: 80px;
+  max-width: 100%;
+  background-color: #3e5cca;
+  display: flex;
+  justify-content: center;
+}
+
+.menu > ul {
+  display: flex;
+  height: 100%;
+  padding: 0 80px;
+  gap: 40px;
+  align-items: center;
+}
+
+.menu li {
+  height: 100%;
+  position: relative;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 87px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.menu .active {
+  background-color: #fff;
+  color: #000;
+}
+
+.menu i {
+  padding: 0 0 5px 5px;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  min-width: 290px;
+  max-height: 75px;
+  background: white;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+.has-submenu:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-menu a {
+  display: block;
+  color: #000;
+  padding: 15px 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sub-menu a:hover {
+  background-color: #f5f5f5;
 }
