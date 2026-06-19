@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Register</h1>
+      <form action="" autocomplete="off" class="form-register">
+        <div class="form-group">
+          <div class="form-label">
+            <label for="display-name">Display name</label>
+          </div>
+          <input
+            type="text"
+            name="display-name"
+            id="display-name"
+            placeholder="Ex. John Smith"
+            spellcheck="false"
+          />
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="profile-picture">Profile picture</label>
+          </div>
+          <label for="profile-picture">
+            <img
+              src="./img/img-avatar-placeholder.png"
+              alt=""
+              class="img-avatar"
+            />
+          </label>
+          <input
+            type="file"
+            accept="image/*"
+            name="profile-picture"
+            id="profile-picture"
+            hidden
+          />
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="email">Email</label>
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johnsmith@gmail.com"
+            spellcheck="false"
+          />
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="phone-number">Phone number</label>
+          </div>
+          <input
+            type="text"
+            name="phone-number"
+            id="phone-number"
+            placeholder="0123456789"
+            spellcheck="false"
+          />
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="password">Password</label>
+          </div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Abc123@..."
+          />
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="confirm-password">Confirm password</label>
+          </div>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Abc123@..."
+          />
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="gender">Gender</label>
+          </div>
+          <div class="form-gender">
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                checked
+              />
+              Male
+            </label>
+          </div>
+          <div class="form-gender">
+            <label>
+              <input type="radio" name="gender" id="female" value="female" />
+              Female
+            </label>
+          </div>
+          <div class="form-gender">
+            <label>
+              <input type="radio" name="gender" id="others" value="others" />
+              Others
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="address">Address</label>
+          </div>
+          <div class="form-address">
+            <label>
+              <input
+                type="radio"
+                name="address"
+                id="hanoi"
+                value="hanoi"
+                checked
+              />
+              Hanoi
+            </label>
+          </div>
+          <div class="form-address">
+            <label>
+              <input
+                type="radio"
+                name="address"
+                id="hochiminh"
+                value="hochiminh"
+              />
+              Ho Chi Minh City
+            </label>
+          </div>
+          <div class="form-address">
+            <label>
+              <input type="radio" name="address" id="hue" value="hue" />
+              Hue
+            </label>
+          </div>
+          <div class="form-address">
+            <label>
+              <input type="radio" name="address" id="danang" value="danang" />
+              Da Nang
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="dob">Date of birth</label>
+          </div>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <div class="form-group">
+          <div class="form-label">
+            <label for="communication">Communication preferences</label>
+          </div>
+          <div class="form-comm">
+            <label>
+              Receive Promotional Emails
+              <input
+                type="checkbox"
+                name="communication"
+                id="promotion"
+                value="promotion"
+                checked
+              />
+            </label>
+          </div>
+          <div class="form-comm">
+            <label>
+              Get Product Updates
+              <input
+                type="checkbox"
+                name="communication"
+                id="updates"
+                value="updates"
+              />
+            </label>
+          </div>
+          <div class="form-comm">
+            <label>
+              Subscribe to Newsletter
+              <input
+                type="checkbox"
+                name="communication"
+                id="subscribe"
+                value="subscribe"
+              />
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
